@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e4adbb6688.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Photography">Photography</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Kumar Daksha Raj</span></h1>
+        </div>
+      </div>
+    </div>
+    <!--------------about------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/face-background.jpg"
+              width="200"
+              height="540"
+              alt=""
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, I'm kumar daksha raj, currently in my second year at
+              vellore institute of technology doing my BTech in computer science
+              with specialization in data science. I'm particularly interested
+              in the field of data science, i believe that information backed by
+              good data is the information to thrive on. I'm good with python,
+              C, java , html , css, react, javascript, MySQL. Also I'm at the
+              beginner Level of figma and canva. I have a keen interest in AI &
+              ML and look forward to gain more knowledge on it. Right now I'm
+              learning Power BI.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Python</span><br />
+                  Intermediate in python language
+                </li>
+                <li>
+                  <span>figma/canva</span><br />
+                  Designing web and app interfaces on figma and canva
+                </li>
+                <li>
+                  <span>Java</span><br />
+                  Basic Java knowledge
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobbies">
+              <ul>
+                <li>
+                  <span>Working out</span><br />
+                  I like working out, if you don't find me anywhere else then
+                  i'm probably in the gym
+                </li>
+                <li>
+                  <span>Photography</span><br />
+                  I love to caputre moments in a picture
+                </li>
+                <li>
+                  <span>Cooking</span><br />
+                  Besides academics and working out i like to cook delicious
+                  meals that is packed with protein and nutrients
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />
+                  CBSE 12th from St. Johns
+                </li>
+                <li>
+                  <span>2027</span><br />
+                  BTech from VIT vellore
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----photography---->
+    <div id="Photography">
+      <div class="container">
+        <h1 class="sub-title">My Clicks</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="images/clickone.jpg" />
+            <div class="layer">
+              <h3>Batu Caves</h3>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/clicktwo.jpg" />
+            <div class="layer">
+              <h3>VIT vellore- mens's hostel</h3>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/clickthree.jpg" />
+            <div class="layer">
+              <h3>Chennai</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--contact setion-->
+    <div id="contact">
+      <div class="contact">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> rajdaksha36@gmail.com</p>
+            <br />
+            <p><i class="fa-solid fa-phone"></i> +91 9661390455</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/dakshhh._a/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/kumar-daksha-raj-a6903628b/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabName) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+    <br>
+
+    <footer>
+      <p>&copy; 2024 Kumar Daksha Raj</p>
+    </footer>
+  </body>
+</html>
