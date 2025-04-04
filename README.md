@@ -15,7 +15,7 @@ JavaScript
 
 ## Clone the repository by using this on your local device:
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/dakshraj2695/Portfolio
 ```
 
 ## Navigate to the project directory:
